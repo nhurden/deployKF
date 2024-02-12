@@ -8,7 +8,7 @@ cd "$THIS_SCRIPT_PATH"
 # upstream configs
 UPSTREAM_REPO="github.com/kubeflow/manifests"
 UPSTREAM_PATH="apps/training-operator/upstream/overlays/kubeflow"
-UPSTREAM_REF="14c0f9abe70c4d0ce3e021a5839a7cdd54dc572d" # v1.7.0
+UPSTREAM_REF="bb6b4b0c4763dfcace78a7c095ddf2c055b4c510" # v1.8.0
 
 # output configs
 OUTPUT_PATH="./upstream"

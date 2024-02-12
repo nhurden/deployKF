@@ -6,10 +6,13 @@ configMapGenerator:
 - envs:
   - params.env
   name: parameters
+- files:
+  - viewer-spec.yaml
+  name: viewer-spec
 images:
 - name: docker.io/kubeflownotebookswg/volumes-web-app
   newName: docker.io/kubeflownotebookswg/volumes-web-app
-  newTag: v1.7.0
+  newTag: v1.8.0
 kind: Kustomization
 namePrefix: volumes-web-app-
 namespace: kubeflow

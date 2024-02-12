@@ -630,12 +630,12 @@ deploykf_core:
 
       profileController:
         repository: kubeflownotebookswg/profile-controller
-        tag: v1.7.0
+        tag: v1.8.0
         pullPolicy: IfNotPresent
 
       kfamApi:
         repository: kubeflownotebookswg/kfam
-        tag: v1.7.0
+        tag: v1.8.0
         pullPolicy: IfNotPresent
 
     ## configs dashboard navigation
@@ -875,9 +875,9 @@ deploykf_core:
       ##         - "WorkloadIdentity": manages GCP WorkloadIdentity for the profile namespace
       ##     - `spec`: a map of plugin-specific configurations
       ##         - spec for AwsIamForServiceAccount:
-      ##           https://github.com/kubeflow/kubeflow/blob/v1.7.0/components/profile-controller/controllers/plugin_iam.go#L30
+      ##           https://github.com/kubeflow/kubeflow/blob/v1.8.0/components/profile-controller/controllers/plugin_iam.go#L30
       ##         - spec for WorkloadIdentity:
-      ##           https://github.com/kubeflow/kubeflow/blob/v1.7.0/components/profile-controller/controllers/plugin_workload_identity.go#L39
+      ##           https://github.com/kubeflow/kubeflow/blob/v1.8.0/components/profile-controller/controllers/plugin_workload_identity.go#L39
       ##  - override these defaults for a specific profile by setting `plugins` in that profile,
       ##    to disable all plugins for that profile, set an empty list `[]`
       ##
@@ -1478,15 +1478,15 @@ kubeflow_tools:
       ##
       image:
         ## the default container image
-        value: kubeflownotebookswg/jupyter-scipy:v1.7.0
+        value: kubeflownotebookswg/jupyter-scipy:v1.8.0
 
         ## the list of available container images in the dropdown
         options:
-          - kubeflownotebookswg/jupyter-scipy:v1.7.0
-          - kubeflownotebookswg/jupyter-pytorch-full:v1.7.0
-          - kubeflownotebookswg/jupyter-pytorch-cuda-full:v1.7.0
-          - kubeflownotebookswg/jupyter-tensorflow-full:v1.7.0
-          - kubeflownotebookswg/jupyter-tensorflow-cuda-full:v1.7.0
+          - kubeflownotebookswg/jupyter-scipy:v1.8.0
+          - kubeflownotebookswg/jupyter-pytorch-full:v1.8.0
+          - kubeflownotebookswg/jupyter-pytorch-cuda-full:v1.8.0
+          - kubeflownotebookswg/jupyter-tensorflow-full:v1.8.0
+          - kubeflownotebookswg/jupyter-tensorflow-cuda-full:v1.8.0
 
       ## VSCode-like Container Images (Group 1)
       ##  - the `imageGroupOne` section is used for "VSCode-like" apps that
@@ -1498,11 +1498,11 @@ kubeflow_tools:
       ##
       imageGroupOne:
         ## the default container image
-        value: kubeflownotebookswg/codeserver-python:v1.7.0
+        value: kubeflownotebookswg/codeserver-python:v1.8.0
 
         ## the list of available container images in the dropdown
         options:
-          - kubeflownotebookswg/codeserver-python:v1.7.0
+          - kubeflownotebookswg/codeserver-python:v1.8.0
 
       ## RStudio-like Container Images (Group 2)
       ##  - the `imageGroupTwo` section is used for "RStudio-like" apps whose
@@ -1516,11 +1516,11 @@ kubeflow_tools:
       ##
       imageGroupTwo:
         ## the default container image
-        value: kubeflownotebookswg/rstudio-tidyverse:v1.7.0
+        value: kubeflownotebookswg/rstudio-tidyverse:v1.8.0
 
         ## the list of available container images in the dropdown
         options:
-          - kubeflownotebookswg/rstudio-tidyverse:v1.7.0
+          - kubeflownotebookswg/rstudio-tidyverse:v1.8.0
 
       ## CPU Resources
       ##
@@ -1719,7 +1719,7 @@ kubeflow_tools:
 
     ## notebook template override
     ##  - a ~string~ to replace the default jupyter-web-app `notebook_template.yaml` with
-    ##    https://github.com/kubeflow/kubeflow/blob/v1.7.0/components/crud-web-apps/jupyter/backend/apps/common/yaml/notebook_template.yaml
+    ##    https://github.com/kubeflow/kubeflow/blob/v1.8.0/components/crud-web-apps/jupyter/backend/apps/common/yaml/notebook_template.yaml
     ##  - can include deployKF templates `{{< ... >}}`
     ##
     notebookTemplate: ""
